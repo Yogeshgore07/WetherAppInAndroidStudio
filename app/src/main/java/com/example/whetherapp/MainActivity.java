@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         apiInterface apiInterface = retrofit.create(apiInterface.class);
-        Call<WeatherApp> response = apiInterface.getWeatherData(cityName, "67391d7b219db3f2f95eb3b32eb52d0a", "metrics");
+        Call<WeatherApp> response = apiInterface.getWeatherData(cityName, "OpenMapApiKey", "metrics");
 
         response.enqueue(new Callback<WeatherApp>() {
             @Override
